@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Simple TypeScript Monads",
     "main": "./dist/index.js",
+    "types": "./typings",
     "scripts": {
         "prepublishOnly": "run-s dist test",
         "dist": "tsc",
