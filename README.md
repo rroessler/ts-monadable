@@ -1,4 +1,4 @@
-# TS-Monads
+# TS-Monadable
 
 A simple set of Monadic structures and typings for TypeScript projects.
 
@@ -6,7 +6,7 @@ A simple set of Monadic structures and typings for TypeScript projects.
 ## Install
 
 ```bash
-npm install ts-monads
+npm install ts-monadable
 ```
 
 
@@ -17,7 +17,7 @@ npm install ts-monads
 The `Maybe` structures can be used to define an optional value. This value may be something or nothing. By wrapping return values in this monad, it forces explicit handling of empty returns.
 
 ```typescript
-import * as Monads from 'ts-monads';
+import * as Monads from 'ts-monadable';
 
 // simple constructor for an example
 const func = (name: string, flag: boolean): Monads.Maybe<string> => {
@@ -34,11 +34,11 @@ func.unwrap(); // safe-unwrapping (throws on `none` with no alternative)
 Similar to the `Maybe` structure, `Result` structures explicitly define an alternative value for an error. This allows adding failure meta-data to results.
 
 ```typescript
-import * as Monads from 'ts-monads';
+import * as Monads from 'ts-monadable';
 
 // simple constructor for an example
 const func = (name: string): Monads.Result<string, string> => {
-    return name === 'ts-monads' ? Monads.Okay(name) : Monads.Error("Invalid name given!");
+    return name === 'ts-monadable' ? Monads.Okay(name) : Monads.Error("Invalid name given!");
 }
 ```
 

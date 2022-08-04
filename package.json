@@ -1,5 +1,5 @@
 {
-    "name": "ts-monads",
+    "name": "ts-monadable",
     "version": "1.0.0",
     "description": "Simple TypeScript Monads",
     "main": "./dist/index.js",
@@ -25,12 +25,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/rroessler/ts-monads.git"
+        "url": "git+https://github.com/rroessler/ts-monadable.git"
     },
     "bugs": {
-        "url": "https://github.com/rroessler/ts-monads/issues"
+        "url": "https://github.com/rroessler/ts-monadable/issues"
     },
-    "homepage": "https://github.com/rroessler/ts-monads#readme",
+    "homepage": "https://github.com/rroessler/ts-monadable#readme",
     "devDependencies": {
         "@types/chai": "^4.3.1",
         "@types/mocha": "^9.1.1",
