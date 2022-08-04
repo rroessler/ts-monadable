@@ -50,7 +50,7 @@ export interface IFailure<T, E> extends Result<T, E> {
     readonly kind: 'failure';
     unwrap(alternative?: T): undefined extends T ? never : T;
     map<U>(fn: (value: T) => U): IFailure<U, E>;
-    flatMap<U>(fn: (value: T) => Result<U, E>): IFailure<never, T>;
+    flatMap<U>(fn: (value: T) => Result<U, E>): IFailure<never, E>;
 }
 
 /********************
