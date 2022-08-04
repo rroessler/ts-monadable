@@ -3,7 +3,7 @@
  **************/
 
 /** Hidden Typings. */
-namespace IMaybe {
+export namespace IMaybe {
     /** Instance States. */
     export type Outcome = 'some' | 'none';
 

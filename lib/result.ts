@@ -6,7 +6,7 @@ import { Maybe, None, Some } from './maybe';
  **************/
 
 /** Hidden Typings. */
-namespace IResult {
+export namespace IResult {
     /** Available Result States. */
     export type Outcome = 'okay' | 'failure';
 
